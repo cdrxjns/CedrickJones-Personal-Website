@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCU ENROLLMENT FORM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* A light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: white; /* White background for the form container */
+            padding: 25px 40px; /* Adjusted padding for better spacing */
+            border-radius: 15px; /* More rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #5682B1; /* Border around the container */
+        }
+        h2 {
+            text-align: center;
+            color: #5682B1; /* Title color */
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 20px; /* Spacing between form groups */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: normal; /* Labels are not bold */
+            color: black; /* Label text color */
+            font-size: 16px;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px); /* Adjust width for padding */
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #739EC9; /* Lighter blue border for input fields */
+            border-radius: 5px;
+            font-size: 16px;
+            color: black; /* Input text color */
+        }
+        /* Style for radio button labels to match the image */
+        .radio-group label {
+            display: block; /* Each radio option on a new line */
+            margin-bottom: 8px;
+            font-weight: normal;
+            color: black;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+            /* Further styling for radio buttons might require custom CSS for appearance */
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button-group button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin: 0 10px; /* Space between buttons */
+        }
+        .button-group .submit-btn {
+            background-color: #5682B1; /* Submit button color */
+            color: white;
+        }
+        .button-group .submit-btn:hover {
+            background-color: #406c9e; /* Darker shade on hover */
+        }
+        .button-group .reset-btn {
+            background-color: #739EC9; /* Reset button color */
+            color: white;
+        }
+        .button-group .reset-btn:hover {
+            background-color: #5e8bb8; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>PCU Enrollment Form</h2>
+        <form action="#" method="post">
+            
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="studentID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="personalNumber">Personal Number :</label>
+                <input type="text" id="personalNumber" name="personalNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Year Level:</label>
+                <label><input type="radio" name="yearLevel" value="1st Year" required> 1st Year</label>
+                <label><input type="radio" name="yearLevel" value="2nd Year"> 2nd Year</label>
+                <label><input type="radio" name="yearLevel" value="3rd Year"> 3rd Year</label>
+                <label><input type="radio" name="yearLevel" value="4th Year"> 4th Year</label>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
