@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get to Know Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #1a2a6c, #feda75); /* Starry Night style */
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #ffe135; /* Yellow text */
+            text-shadow: 2px 2px #000d33;
+        }
+
+        .profile-pic {
+            display: block;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 3px solid #ffe135;
+            object-fit: cover;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #ffe135;
+            text-shadow: 1px 1px #000d33;
+        }
+
+        .card label {
+            display: block;
+            font-weight: 600;
+            margin: 10px 0 5px;
+        }
+
+        .card input, 
+        .card textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .card input {
+            background: rgba(255,255,255,0.8);
+            color: #000;
+        }
+
+        .card textarea {
+            background: rgba(255,255,255,0.8);
+            color: #000;
+            resize: vertical;
+            height: 80px;
+        }
+
+        .card input:disabled,
+        .card textarea:disabled {
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Get To Know Me!</h1>
+    <img src="mehqt.jpg" alt="Profile Picture" class="profile-pic">
+
+    <div class="container">
+
+        <!-- Personal Information -->
+        <div class="card">
+            <h2>About Me</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" value="Hi, I'm Cedrick Jones!" disabled />
+
+            <label for="section">Section</label>
+            <input type="text" id="section" value="BSIT-3B" disabled />
+
+            <label for="birthday">Birthday</label>
+            <input type="text" id="birthday" value="June 10, 2005" disabled />
+
+              <label for="hometown">Hometown</label>
+            <input type="text" id="hometown" value="Pasay City" disabled />
+
+             <label for="school">School</label>
+            <input type="text" id="school" value="Philippine Christian University" disabled />
+
+        </div>
+
+        <!-- Favorite Things -->
+        <div class="card">
+            <h2>My Favorites</h2>
+            <label for="movie">Movie</label>
+            <input type="text" id="movie" value="Howl's Moving Castle" disabled />
+
+            <label for="color">Color</label>
+            <input type="text" id="color" value="Blue" disabled />
+
+            <label for="game">Game</label>
+            <input type="text" id="game" value="Call of Duty Mobile" disabled />
+
+            <label for="song">Song</label>
+            <input type="text" id="song" value="Bughaw by Maki" disabled />
+        </div>
+
+       <!-- Strengths, Weaknesses, Life Verse -->
+<div class="card">
+    <h2>About Me More</h2>
+    <label for="strengths">My Strengths</label>
+    <textarea id="strengths" disabled>GOD, MY FAMILY AND FRIENDS</textarea>
+
+    <label for="weaknesses">My Weaknesses</label>
+    <textarea id="weaknesses" disabled>Heights and Death</textarea>
+
+    <label for="lifeverse">Life Verse</label>
+    <textarea id="lifeverse" disabled>Luke 1:37 - "For nothing will be impossible with God."</textarea>
+</div>
+
+</body>
+</html>
